@@ -1,0 +1,39 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Instrument : MonoBehaviour {
+    
+    [SerializeField]
+    private AudioSource sound;
+
+    [SerializeField]
+    private float patternLen;
+
+    [SerializeField]
+    private float[] beats;
+
+    [SerializeField]
+    private float speed = 1;
+
+    private int nextBeat;
+    
+	// Use this for initialization
+	void Start () {
+	     nextBeat = 0;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+         float time = (Time.timeSinceLevelLoad*speed)%patternLen;
+	     float timeLeft = time - beats[nextBeat];
+         if(timeLeft>0 && timeLeft<Time.deltaTime*speed){
+                PlayBeat();
+         }
+	}
+
+    void PlayBeat(){
+         sound.Play();
+         Debug.Log("Playing Beat " + nextBeat);
+         nextBeat = (nextBeat+1)%beats.Length;
+    }
+}

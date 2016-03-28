@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HandController.cs">
+    <Files>
+      <File FileName="Assets\Scripts\GameManager.cs" Line="11" Column="82" />
+      <File FileName="Assets\Scripts\TerrainObject.cs" Line="15" Column="61" />
+      <File FileName="Assets\Scripts\TerrainGenerator.cs" Line="61" Column="1" />
+      <File FileName="Assets\Scripts\MusicListener.cs" Line="20" Column="31" />
+      <File FileName="Assets\Scripts\ObjectSpawner.cs" Line="12" Column="34" />
+      <File FileName="Assets\Scripts\HandController.cs" Line="7" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
