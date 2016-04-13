@@ -100,6 +100,8 @@ public class UDPReceiver : MonoBehaviour {
 		Hand2 = new Vector3(System.BitConverter.ToSingle (message, 12),
 		                    System.BitConverter.ToSingle (message, 16),
 		                    System.BitConverter.ToSingle (message, 20));
+
+		Debug.Log (Hand1 + " : " + Hand2);
 	}
 
 	void OnApplicationQuit(){
